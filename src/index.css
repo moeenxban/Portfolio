@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0b0d;
+  --color-surface: #111316;
+  --color-card: #16181c;
+  --color-fg: #ece9e4;
+  --color-muted: #8b8d93;
+  --color-line: #23262b;
+  --color-accent: #35e3bd;
+  --color-accent-strong: #1f9d84;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+
+:root {
+  --pin-slide-vh: 50vh;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #04120e;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2d33 var(--color-bg);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  overflow-x: clip;
+}
+
+@media (pointer: fine) {
+  body,
+  a,
+  button {
+    cursor: none;
+  }
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain-shift 0.7s steps(4) infinite;
+}
+
+@keyframes grain-shift {
+  0% { background-position: 0 0; }
+  25% { background-position: -40px 20px; }
+  50% { background-position: 20px -30px; }
+  75% { background-position: -10px -40px; }
+  100% { background-position: 30px 30px; }
+}
+
+.aurora {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(42% 38% at 12% 8%, hsla(165, 90%, 45%, 0.14), transparent 70%),
+    radial-gradient(38% 34% at 88% 12%, hsla(215, 90%, 60%, 0.1), transparent 70%),
+    radial-gradient(46% 40% at 78% 88%, hsla(262, 90%, 70%, 0.08), transparent 70%),
+    radial-gradient(40% 36% at 8% 92%, hsla(325, 90%, 60%, 0.06), transparent 70%);
+}
+
+.holo {
+  background: linear-gradient(100deg, #ffffff 0%, #d9fff4 25%, #7ee8d2 50%, #b8d4ff 75%, #ffffff 100%);
+  background-size: 220% 220%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: holo-drift 12s linear infinite;
+}
+
+@keyframes holo-drift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 220% 50%; }
+}
+
+.text-outline {
+  -webkit-text-stroke: 1.5px rgba(236, 233, 228, 0.55);
+  color: transparent;
+}
+
+.glass {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+.split-line {
+  display: block;
+  overflow: hidden;
+}
+
+.roll {
+  display: inline-flex;
+  height: 1lh;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.roll-inner {
+  display: inline-flex;
+  flex-direction: column;
+  transition: transform 0.55s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.roll-inner > span {
+  display: inline-block;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+a:hover .roll-inner,
+button:hover .roll-inner,
+.group:hover .roll-inner {
+  transform: translateY(-50%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    animation: none;
+  }
+  .holo {
+    animation: none;
+  }
+  .marquee-track {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
