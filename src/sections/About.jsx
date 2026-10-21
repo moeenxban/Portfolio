@@ -52,7 +52,7 @@ export default function About() {
         <SectionLabel
           index="04 · About"
           title="The Engineer"
-          detail="Research born, product driven. Peshawar, Pakistan."
+          detail="Research born, product driven. Islamabad, Pakistan."
         />
 
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
@@ -83,7 +83,8 @@ export default function About() {
               memory enabled agents and offline RAG pipelines that run without paid LLM APIs,
               built for resource constrained institutions. Delivered AI systems for Fauji Foundation
               School and Edwardes College, and published research spanning generative AI for speech
-              therapy and Sentinel-2 crop classification.
+              therapy and Sentinel-2 crop classification. I now run FAYSA AI, my own AI product
+              studio, where the same work becomes products and consulting for real businesses.
             </p>
 
             <div className="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-4">

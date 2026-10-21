@@ -47,8 +47,8 @@ export default function Contact() {
         </h2>
 
         <p className="mx-auto mt-8 max-w-md text-sm leading-relaxed text-fg/70">
-          ...and maybe retire to the farm together. I&apos;m available for agentic AI, RAG and
-          computer vision projects, remote or in Pakistan.
+          ...and maybe retire to the farm together. Through FAYSA AI I take on agentic AI, RAG
+          and computer vision builds, remote or in Pakistan.
         </p>
 
         <Magnetic strength={0.4} className="mt-12">

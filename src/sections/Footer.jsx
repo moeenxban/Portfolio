@@ -67,7 +67,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col gap-6 border-t border-line pt-8 md:flex-row md:items-center md:justify-between">
           <p className="font-mono text-xs leading-relaxed text-muted">
-            Peshawar, Pakistan. Or wherever the fields are.
+            Islamabad, Pakistan. Or wherever the fields are.
             <br />
             Always learning, always building.
           </p>

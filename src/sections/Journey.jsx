@@ -50,7 +50,7 @@ export default function Journey() {
         <SectionLabel
           index="05 · Journey"
           title="The Path"
-          detail="From UET Peshawar to agentic AI in production."
+          detail="From UET to agentic AI in production."
         />
 
         <div data-timeline className="relative pl-8 md:pl-12">

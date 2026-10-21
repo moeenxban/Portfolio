@@ -4,7 +4,7 @@ export const profile = {
   fullName: 'Syed Ghulam Moeen Ud Din Shah Banoori',
   shortTitle: 'AI Engineer',
   tagline: 'AI Engineer chasing the dream every coder has: the farm life.',
-  location: 'Peshawar, Pakistan',
+  location: 'Islamabad, Pakistan',
   email: 'banoorimoeen@gmail.com',
   phone: '+92 342 9253993',
   linkedin: 'https://www.linkedin.com/in/syed-ghulam-moeen-ud-din-banoori-05227330a',
@@ -37,6 +37,7 @@ export const products = [
     stack: ['RAG', 'Qdrant', 'Local LLM', 'STT/TTS'],
     url: 'https://vitae-ai-roan.vercel.app/',
     image: '/assets/products/vitae.svg',
+    note: 'Live · try it in the browser',
     summary:
       'An AI avatar tutor that answers professor and student queries with zero paid LLM APIs. Local embeddings, Qdrant vector search, offline document ingestion, and voice interaction built for low cost institutional deployment. It teaches, it listens, and it never bills you.',
   },
@@ -48,6 +49,7 @@ export const products = [
     stack: ['FastAPI', 'React', 'Whisper AI', 'FFmpeg'],
     url: 'https://kroppr-web.vercel.app/',
     image: '/assets/products/kroppr.svg',
+    note: 'Live · try it in the browser',
     summary:
       'A self hosted platform that turns long form video into short form content. Scene detection, AI clip selection, auto captioning, thumbnail generation, and multi platform publishing through one modular pipeline. Bring the hour long lecture, leave with the sixty second highlight.',
   },
@@ -59,6 +61,7 @@ export const products = [
     stack: ['Python', 'Pandas', 'CCXT', 'AsyncIO'],
     url: null,
     image: '/assets/products/trading.svg',
+    note: 'In production · no public link',
     summary:
       'A fully automated bot that studies 260,000+ BTC/USDT candles across multiple timeframes. EMA-200 trend filters, Bollinger squeeze detection, RSI momentum, ATR stop losses, and a backtesting engine that refuses to peek at the future.',
   },
@@ -70,12 +73,36 @@ export const products = [
     stack: ['FaceNet', 'ESP32-CAM', 'OpenCV', 'SQL'],
     url: null,
     image: '/assets/products/attendance.svg',
+    note: 'Deployed on site · no public link',
     summary:
       'A FaceNet powered recognition system deployed at Fauji Foundation School, Chaklala. ESP32-CAM capture, Haar Cascade detection, uniform discipline monitoring, and SQL backed attendance logging. It remembers who showed up so you don\u2019t have to.',
+  },
+  {
+    title: 'Open Contract',
+    subtitle: 'Evidence First Commercial Intelligence for Construction',
+    tag: 'IN DEVELOPMENT',
+    year: '2026',
+    stack: ['Next.js', 'FastAPI', 'PostgreSQL', 'Local LLM', 'RAG'],
+    url: null,
+    image: '/assets/products/opencontract.svg',
+    note: 'In development · private pilot',
+    summary:
+      'Turns the documents a construction project already produces into evidence backed scope change findings. Deterministic quantity variance detection, a human confirmed baseline, and every claim tied to a page locator. AI interprets, evidence supports, code calculates, qualified humans decide.',
   },
 ]
 
 export const projects = [
+  {
+    title: 'FAYSA AI',
+    subtitle: 'AI Product Studio & Consulting',
+    tag: 'COMPANY',
+    year: '2026',
+    stack: ['Agentic AI', 'RAG', 'Computer Vision', 'Python'],
+    url: null,
+    image: '/assets/products/faysa.svg',
+    summary:
+      'FAYSA AI is my own company: an AI product studio that designs, builds and ships agentic AI systems, RAG pipelines and computer vision products for real businesses. Consulting, product development and applied research, run end to end by me.',
+  },
   {
     title: 'VoiceBridge',
     subtitle: 'Communication Platform for Non-Verbal Children',
@@ -221,10 +248,20 @@ export const stats = [
   { value: 2, suffix: '+', label: 'Published papers' },
   { value: 260, suffix: 'K+', label: 'Candles analyzed' },
   { value: 97.3, suffix: '%', label: 'Model accuracy', decimals: 1 },
-  { value: 3, suffix: '', label: 'Industry roles' },
+  { value: 4, suffix: '', label: 'Roles & ventures' },
 ]
 
 export const journey = [
+  {
+    period: '2026 · Present',
+    role: 'Founder & Lead Engineer',
+    org: 'FAYSA AI',
+    points: [
+      'Founded FAYSA AI to design, build and ship production AI systems for businesses',
+      'AI product development, consulting and applied research under one roof',
+      'Client engagements across agentic AI, RAG pipelines and computer vision',
+    ],
+  },
   {
     period: 'Jul 2025 · May 2026',
     role: 'AI Engineer',

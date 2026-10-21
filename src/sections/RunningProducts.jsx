@@ -127,7 +127,7 @@ export default function RunningProducts() {
                     </a>
                   ) : (
                     <p className="mt-6 font-mono text-xs uppercase tracking-[0.25em] text-muted">
-                      In production · no public link
+                      {product.note}
                     </p>
                   )}
                 </div>
@@ -154,7 +154,7 @@ export default function RunningProducts() {
           <SectionLabel
             index="02 · Products"
             title="Running Products"
-            detail="Four products live today. Scroll to fly through each one."
+            detail="Five builds in the lab and in production. Scroll to fly through each one."
           />
         </div>
       </div>
@@ -209,7 +209,7 @@ export default function RunningProducts() {
                       </Magnetic>
                     ) : (
                       <p className="mt-8 font-mono text-xs uppercase tracking-[0.25em] text-muted">
-                        In production · no public link
+                        {product.note}
                       </p>
                     )}
                   </div>

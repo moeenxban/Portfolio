@@ -45,7 +45,7 @@ export default function SelectedWork() {
   )
 
   return (
-    <section id="selected" ref={sectionRef} className="relative px-6 py-24 md:px-10 md:py-32">
+    <section id="selected" ref={sectionRef} className="relative overflow-hidden px-6 py-24 md:px-10 md:py-32">
       <div className="mx-auto max-w-[1400px]">
         <SectionLabel
           index="02B · Gallery"
