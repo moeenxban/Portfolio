@@ -13,6 +13,7 @@ export const profile = {
   photo: '/assets/me.jpg',
   heroVideo: '/assets/hero.mp4',
   roles: [
+    'Founder, FAYSA AI',
     'Agentic AI',
     'RAG Systems',
     'Computer Vision',

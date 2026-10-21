@@ -71,6 +71,9 @@ export default function About() {
             <p className="mt-4 font-mono text-xs uppercase tracking-[0.3em] text-muted">
               {profile.location} · {profile.email}
             </p>
+            <p className="mt-3 font-mono text-xs uppercase tracking-[0.25em] text-accent">
+              Founder & Lead Engineer · FAYSA AI
+            </p>
           </div>
 
           <div className="lg:col-span-7">
@@ -83,8 +86,9 @@ export default function About() {
               memory enabled agents and offline RAG pipelines that run without paid LLM APIs,
               built for resource constrained institutions. Delivered AI systems for Fauji Foundation
               School and Edwardes College, and published research spanning generative AI for speech
-              therapy and Sentinel-2 crop classification. I now run FAYSA AI, my own AI product
-              studio, where the same work becomes products and consulting for real businesses.
+              therapy and Sentinel-2 crop classification. I am the founder of FAYSA AI, my own AI
+              product studio, where the same work becomes products and consulting for real
+              businesses.
             </p>
 
             <div className="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-4">

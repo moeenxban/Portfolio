@@ -44,11 +44,14 @@ function RotatingRole() {
   return (
     <span
       ref={frameRef}
-      className="relative inline-flex h-[1.5em] w-full overflow-hidden text-accent"
+      className="relative inline-grid h-[1.5em] overflow-hidden text-accent"
       aria-live="off"
     >
       {profile.roles.map((role) => (
-        <span key={role} className="absolute inset-0 leading-none">
+        <span
+          key={role}
+          className="col-start-1 row-start-1 whitespace-nowrap leading-none"
+        >
           {role}
         </span>
       ))}
@@ -182,7 +185,7 @@ export default function Hero() {
             data-hero-fade
             className="mb-6 font-mono text-[11px] uppercase tracking-[0.35em] text-fg/70"
           >
-            AI Engineer · {profile.location}
+            AI Engineer & Founder · {profile.location}
           </p>
 
           <div data-hero-fade className="mb-4 md:mb-6">
